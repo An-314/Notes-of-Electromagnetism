@@ -2147,7 +2147,7 @@ n个点电荷，先把$q_1,q_2,\cdots,q_n$依次移走，有：
 
 \begin{block}{Ampere 力}
     \begin{align}
-        \mathrm{d} \mathbf{F} & = I \mathrm{d} \mathbf{l} \times  \times \mathbf{B}
+        \mathrm{d} \mathbf{F} & = I \mathrm{d} \mathbf{l} \times  \mathbf{B}
     \end{align}
 \end{block}
 
@@ -2666,8 +2666,8 @@ Bohr磁子：
         \centering
         \begin{tabular}{ccccc}
             \hline
-            电路 & $\xi$        & $I$         & $R$                          & $\sigma$ \\
-            磁路 & $\xi_m = NI$ & $\psi = BS$ & $R_m = \frac{\phi d}{\mu S}$ & $\mu$    \\ \hline
+            电路 & $\xi$        & $I$         & $R$                      & $\sigma$ \\
+            磁路 & $\xi_m = NI$ & $\psi = BS$ & $R_m = \frac{ d}{\mu S}$ & $\mu$    \\ \hline
         \end{tabular}
         \caption{电路与磁路的对应}
     \end{table}
@@ -2819,6 +2819,10 @@ Bohr磁子：
                 & =  \frac{1}{2} \int\mathbf{j}_0 \cdot\mathbf{A} \mathrm{d} V \\
                 & = \frac{1}{2} \sum \psi_i I_i                                \\
                 & = \frac{1}{2} \sum L I^2
+        \end{align}
+        \begin{align}
+            F & = (\nabla W)_\text{I不变}       \\
+              & = (-\nabla W)_\text{$\psi$不变}
         \end{align}
     \end{block}
 
@@ -3216,7 +3220,7 @@ Bohr磁子：
     根据电荷守恒定律：
     \begin{align}
         \nabla \cdot \mathbf{j} + \frac{\partial \rho_0}{\partial t} & = 0      \\
-        \nabla \cdot \mathbf{D}                                      & = \rho_0 
+        \nabla \cdot \mathbf{D}                                      & = \rho_0
     \end{align}
     有：
     \begin{align}
